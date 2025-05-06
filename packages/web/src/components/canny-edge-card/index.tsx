@@ -114,11 +114,9 @@ export default function CannyEdgeCard() {
   const onBrowse = () => fileInputRef.current?.click();
 
   return (
-    <Card className="p-4 w-full max-w-5xl mx-auto">
+    <Card className="p-2 w-full max-w-5xl mx-auto">
       <CardHeader>
-        <h2 className="text-xl font-semibold">
-          Canny Edge Detection Playground
-        </h2>
+        <h2 className="text-xl font-semibold">Canny Edge Detection</h2>
       </CardHeader>
       <CardContent>
         {/* Upload / drop zone */}
@@ -143,18 +141,18 @@ export default function CannyEdgeCard() {
 
         {/* Sliders */}
         <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div>
-            <label className="font-medium">Low threshold ({low})</label>
+          <div className="flex flex-col items-center gap-2">
+            <label className="font-medium p-2">Low threshold ({low})</label>
             <Slider
-              min={0}
+              min={1}
               max={high - 1}
               step={1}
               defaultValue={[low]}
               onValueChange={([v]) => setLow(v)}
             />
           </div>
-          <div>
-            <label className="font-medium">High threshold ({high})</label>
+          <div className="flex flex-col items-center gap-2">
+            <label className="font-medium p-2">High threshold ({high})</label>
             <Slider
               min={low + 1}
               max={255}
