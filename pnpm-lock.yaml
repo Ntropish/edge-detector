@@ -10,6 +10,8 @@ importers:
 
   packages/canny-wasm: {}
 
+  packages/canny-wasm-rust: {}
+
   packages/web:
     dependencies:
       '@radix-ui/react-slider':
