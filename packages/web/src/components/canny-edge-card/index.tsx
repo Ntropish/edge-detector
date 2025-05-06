@@ -114,9 +114,11 @@ export default function CannyEdgeCard() {
   const onBrowse = () => fileInputRef.current?.click();
 
   return (
-    <Card className="p-2 w-full max-w-5xl mx-auto">
+    <Card className="p-3 w-full max-w-5xl mx-auto">
       <CardHeader>
-        <h2 className="text-xl font-semibold">Canny Edge Detection</h2>
+        <h2 className="text-3xl font-light text-muted-foreground">
+          Canny Edge Detection
+        </h2>
       </CardHeader>
       <CardContent>
         {/* Upload / drop zone */}
