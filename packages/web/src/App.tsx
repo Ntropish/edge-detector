@@ -1,10 +1,13 @@
 import "./App.css";
-import CannyEdgeCard from "./components/canny-edge-card.tsx";
+import CannyEdgeCard from "@/components/canny-edge-card";
+import { ThemeProvider } from "./components/theme-provider";
 
 function App() {
   return (
     <>
-      <CannyEdgeCard />
+      <ThemeProvider>
+        <CannyEdgeCard />
+      </ThemeProvider>
     </>
   );
 }
