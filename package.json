@@ -1,0 +1,12 @@
+{
+  "name": "edge-detect-ii",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {}
+}
