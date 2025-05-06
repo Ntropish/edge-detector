@@ -1,12 +1,14 @@
 {
-  "name": "edge-detect-ii",
+  "name": "edge-detector",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "workspaces": [
     "packages/*"
   ],
-  "scripts": {},
+  "scripts": {
+    "deploy-web": "pnpm --filter edge-detect-web run build && pnpm --filter edge-detect-web run deploy"
+  },
   "dependencies": {},
   "devDependencies": {}
 }
