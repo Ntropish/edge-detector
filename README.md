@@ -1,4 +1,4 @@
-# Canny Edge Detection Web App
+# [Canny Edge Detection SPA](https://ntropish.github.io/edge-detector/)
 
 A lightweight, **pnpm monorepo** that demonstrates real‑time Canny edge detection entirely in the browser using **Rust → WASM** for the heavy lifting and **React + Vite** for the user interface.
 
